@@ -1,59 +1,100 @@
-# Servicios
+actividad  Componentes 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.1.
+Institución: SENA - Centro de Biotecnología
+Programa: Análisis y Desarrollo de Software (ADSO)
+Aprendiz: Juan José Bocanegra Mora
+Instructor: Alexis Arévalo
+Ficha: 3203082
 
-## Development server
+Tema del Proyecto
 
-To start a local development server, run:
+El proyecto se centra en la temática de fútbol, aplicando la comunicación entre componentes para gestionar información de un equipo deportivo.
+La aplicación simula un panel de control de un equipo de fútbol, donde se pueden visualizar secciones como Inicio del equipo, Entrenamiento y Competencias, demostrando la interacción dinámica entre componentes y la actualización en tiempo real de los datos relacionados con jugadores, tácticas y estrategias de juego.
+Resumen del Proyecto
 
-```bash
+El presente proyecto consiste en una aplicación web desarrollada en Angular, diseñada para demostrar la comunicación efectiva entre componentes hermanos mediante el uso de servicios y rutas. La aplicación permite la navegación dinámica entre distintas secciones, así como la actualización en tiempo real del contenido según las acciones del usuario.
+
+Funcionalidades Principales
+
+Barra Superior (Componente 1):
+Incluye un logotipo y tres botones interactivos que permiten actualizar dinámicamente el contenido del Componente 2, indicando visualmente el botón actualmente activo.
+
+Barra Lateral (Componente 2):
+Presenta un título y una lista de opciones que cambian según el menú seleccionado. Resalta la opción activa y permite la navegación entre tres páginas funcionales, mientras que las restantes tienen un carácter visual.
+
+Router Outlet:
+Implementa el sistema de rutas de Angular, proporcionando una navegación SPA (Single Page Application) fluida que carga tres componentes diferentes sin recargar la página.
+
+Estructura del Proyecto
+src/
+├── app/
+│   ├── componente1/              # Barra superior con botones
+│   ├── componente2/              # Barra lateral de navegación
+│   ├── pagina1/                  # Vista de la página 1
+│   ├── pagina2/                  # Vista de la página 2
+│   ├── pagina3/                  # Vista de la página 3
+│   ├── comunicacion.service.ts   # Servicio de comunicación
+│   ├── app-routing.module.ts     # Configuración de rutas
+│   └── app.module.ts             # Módulo principal
+
+Tecnologías Utilizadas
+
+Angular: Framework principal
+
+TypeScript: Lenguaje de programación
+
+SCSS: Preprocesador de estilos
+
+RxJS: Programación reactiva para la comunicación entre componentes
+
+Conceptos Aplicados
+
+Comunicación entre componentes hermanos a través de servicios
+
+Uso de Observables y BehaviorSubjects para programación reactiva
+
+Implementación de rutas en Angular para SPA
+
+Data binding y uso de directivas
+
+Desarrollo de componentes modulares y reutilizables
+
+Inyección de dependencias
+
+Instalación y Ejecución
+
+Clonar el repositorio:
+
+git clone https://github.com/lFonseca117/comunicacion-componentes-angular.git
+
+
+Instalar dependencias:
+
+cd comunicacion-componentes-angular
+npm install
+
+
+Ejecutar la aplicación:
+
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+Abrir en el navegador: http://localhost:4200
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Aprendizajes Obtenidos
 
-```bash
-ng generate component component-name
-```
+Durante la realización del proyecto se adquirieron conocimientos sobre:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Implementación de servicios para comunicación entre componentes
 
-```bash
-ng generate --help
-```
+Uso de Observables y BehaviorSubjects
 
-## Building
+Configuración y gestión de rutas en Angular
 
-To build the project run:
+Diseño de interfaces responsivas con SCSS
 
-```bash
-ng build
-```
+Organización y buenas prácticas en la estructura de proyectos Angular
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Autor: Juan José Bocanegra Mora
+Aprendiz ADSO – SENA
+Ficha: 3203082
